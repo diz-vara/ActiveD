@@ -1056,7 +1056,7 @@ public:
 
 		// If we've been scrolled to the left, and resize so
 		// there's more client area to the right, adjust the
-		// scroll offset accordingly.
+	// scroll offset accordingly.
 		if((xpos + m_iScrollOffset) < rcTabItemArea.right)
 		{
 			m_iScrollOffset = (rcTabItemArea.right - xpos);
@@ -1070,7 +1070,7 @@ public:
 
 template <class TItem = CCustomTabItem>
 class CDotNetButtonTabCtrl : 
-	public CCustomTabCtrl<CDotNetButtonTabCtrl, TItem>
+	public CCustomTabCtrl<CDotNetButtonTabCtrl<TItem>, TItem>
 {
 protected:
 	typedef CCustomTabCtrl<CDotNetButtonTabCtrl, TItem> customTabClass;

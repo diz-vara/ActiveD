@@ -904,7 +904,7 @@ typedef CWinTraits<WS_POPUP | WS_CAPTION | WS_VISIBLE | WS_SYSMENU | WS_THICKFRA
 
 template <class TTabCtrl = CDotNetTabCtrl<CTabViewTabItem> >
 class CTabbedPopupFrame :
-	public CTabbedFrameImpl<CTabbedPopupFrame, TTabCtrl, CFrameWindowImpl<CTabbedPopupFrame, CWindow, TabbedPopupFrameWinTraits> >
+	public CTabbedFrameImpl<CTabbedPopupFrame<TTabCtrl>, TTabCtrl, CFrameWindowImpl<CTabbedPopupFrame, CWindow, TabbedPopupFrameWinTraits> >
 {
 protected:
 	typedef CTabbedPopupFrame<TTabCtrl> thisClass;

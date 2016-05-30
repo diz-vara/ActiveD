@@ -2637,7 +2637,8 @@ void CMainFrame::RemoveAllViews()
   ATLTRACE("OnFileClose:: m_csArrays ENTERED\n");
   m_pCurrView = 0;
   int N = m_arpDialog.GetSize();
-  for (int idx = 0; idx < N-1; idx++) 
+  int idx(0);
+  for (idx = 0; idx < N-1; idx++) 
   { 
     PostMessage(WM_DIZ_VIEW_CLOSE,0,(LPARAM)(m_arpView[idx]));
 /*
