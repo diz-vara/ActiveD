@@ -1,0 +1,32 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BA69047E-5209-4332-8F92-8772600DBA38}"
+	ProjectSection(SolutionItems) = preProject
+		Help\ActD.htm = Help\ActD.htm
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ActD", "ActD.vcxproj", "{47F37F5A-A98E-4341-8637-11094FC5D058}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		DebugTr|Win32 = DebugTr|Win32
+		Release|Win32 = Release|Win32
+		ReleaseTr|Win32 = ReleaseTr|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47F37F5A-A98E-4341-8637-11094FC5D058}.Debug|Win32.ActiveCfg = Debug|Win32
+		{47F37F5A-A98E-4341-8637-11094FC5D058}.Debug|Win32.Build.0 = Debug|Win32
+		{47F37F5A-A98E-4341-8637-11094FC5D058}.DebugTr|Win32.ActiveCfg = DebugTr|Win32
+		{47F37F5A-A98E-4341-8637-11094FC5D058}.DebugTr|Win32.Build.0 = DebugTr|Win32
+		{47F37F5A-A98E-4341-8637-11094FC5D058}.Release|Win32.ActiveCfg = Release|Win32
+		{47F37F5A-A98E-4341-8637-11094FC5D058}.Release|Win32.Build.0 = Release|Win32
+		{47F37F5A-A98E-4341-8637-11094FC5D058}.ReleaseTr|Win32.ActiveCfg = ReleaseTr|Win32
+		{47F37F5A-A98E-4341-8637-11094FC5D058}.ReleaseTr|Win32.Build.0 = ReleaseTr|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

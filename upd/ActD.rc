@@ -1,0 +1,1514 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "atlres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TB1 TOOLBAR  16, 25
+BEGIN
+    BUTTON      ID_ONE
+    BUTTON      ID_TWO
+    SEPARATOR
+    BUTTON      ID_BUTTON32774
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_TB1                 BITMAP                  "res\\toolbar1.bmp"
+IDB_ARROWIN             BITMAP                  "res\\ArrowIn.bmp"
+IDB_ARROWOUT            BITMAP                  "res\\ArrowOut.bmp"
+IDB_SAVE                BITMAP                  "res\\save.bmp"
+IDB_LOAD                BITMAP                  "res\\load.bmp"
+IDB_TOOL                BITMAP                  "res\\Tools.bmp"
+IDB_UNLOCK              BITMAP                  "res\\unlock.bmp"
+IDB_LOCK                BITMAP                  "res\\lock.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_BIPOLDLG DIALOGEX 0, 0, 315, 110
+STYLE DS_SETFONT | DS_3DLOOK | DS_FIXEDSYS | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_WINDOWEDGE
+CAPTION "Set Bipolar channel"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_FRAME,"Static",SS_BLACKFRAME | SS_NOTIFY,13,20,98,
+                    79
+    CONTROL         "",IDC_FRAME2,"Static",SS_BLACKFRAME | SS_NOTIFY,136,20,
+                    98,79
+    PUSHBUTTON      "OK",IDOK,262,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,262,25,50,14
+    EDITTEXT        IDC_NAME,260,52,52,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "REMOVE",IDC_REMOVE,262,74,50,14
+    LTEXT           "Static",IDC_SNAME,262,42,50,8
+    LTEXT           "Subtrahend",IDC_STATIC,43,9,38,8
+    LTEXT           "Minuend",IDC_STATIC,165,10,28,8
+END
+
+IDD_MAPDLG DIALOGEX 0, 0, 276, 145
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU | 
+    WS_THICKFRAME
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,219,133,50,10
+    PUSHBUTTON      "Cancel",IDCANCEL,169,133,50,10
+    CONTROL         "",IDC_FRAME,"Static",SS_BLACKFRAME | SS_NOTIFY,7,0,262,
+                    132
+    PUSHBUTTON      "Load Channel Names",IDC_LOADNAMES,7,133,83,10
+END
+
+IDD_HARDDLG DIALOGEX 0, 0, 81, 282
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "N of installed\nmodules",IDC_STATIC,9,20,53,16
+    EDITTEXT        IDC_MODN,15,36,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_NMODS,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNLEFT | UDS_AUTOBUDDY | UDS_ARROWKEYS,10,34,10,
+                    14
+    CONTROL         "Touchproofs",IDC_TOUCH,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,9,61,56,10
+    LTEXT           "N of channels",IDC_STATIC,9,51,44,8
+    LTEXT           "000",IDC_NCH,59,51,13,8
+    CTEXT           "Static",IDC_MODE,4,76,66,61,0,WS_EX_STATICEDGE
+    LTEXT           "Decimate to (Hz)",IDC_STATIC,6,141,54,8
+    COMBOBOX        IDC_DECIMATE,0,149,74,30,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Decimate Trigger",IDC_TRIGDEC,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,1,166,67,10
+    CTEXT           "BAT",IDC_BATTERY,10,8,23,11,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "CMS",IDC_CMS,38,8,23,11,SS_CENTERIMAGE | SS_SUNKEN
+    CONTROL         "",IDC_MAP,"Static",SS_BLACKFRAME | SS_NOTIFY,1,181,75,
+                    97
+END
+
+IDD_DLGVIEW DIALOGEX 0, 0, 390, 95
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 8, "Microsoft Sans Serif", 400, 0, 0xCC
+BEGIN
+    CONTROL         "",IDC_FRAME,"Static",SS_BLACKFRAME | SS_NOTIFY,105,11,
+                    98,79
+    CONTROL         "",IDC_FRAME2,"Static",SS_BLACKFRAME | SS_NOTIFY,208,11,
+                    98,79
+    LTEXT           "Display",IDC_DISPTXT,135,0,24,8
+    LTEXT           "Reference",IDC_REFTXT,242,0,36,8
+    PUSHBUTTON      "X",IDC_CLOSE,368,2,11,8,NOT WS_TABSTOP
+    CONTROL         "Trigger",IDC_TRIGGER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,320,80,39,10
+    CONTROL         "Bipolar",IDC_BIPOLAR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,318,1,33,10
+    CONTROL         "",IDC_BPLIST,"SysListView32",LVS_REPORT | 
+                    LVS_NOLABELWRAP | LVS_ALIGNLEFT | LVS_NOCOLUMNHEADER | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,314,11,65,68
+    LTEXT           "Low-pass",IDC_STATIC,14,33,31,8
+    LTEXT           "High-pass",IDC_STATIC,14,48,32,8
+    GROUPBOX        "Filters (Hz) ",IDC_FILTERS,7,24,96,38,BS_NOTIFY,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_SCALE,43,63,40,13,ES_RIGHT | ES_AUTOHSCROLL
+    CONTROL         "",IDC_SSCALE,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNLEFT | UDS_AUTOBUDDY | UDS_ARROWKEYS,39,44,10,
+                    14
+    LTEXT           "Scale",IDC_STATIC,16,66,18,8
+    CTEXT           "uV",IDC_SCALEUNIT,84,65,16,10,SS_SUNKEN
+    COMBOBOX        IDC_CMBFLP,51,29,48,30,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_CMBFHP,51,45,48,30,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "S",IDC_TOOL,7,0,13,12,BS_BITMAP
+END
+
+IDD_COLORSDLG DIALOGEX 0, 0, 195, 252
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU | 
+    WS_THICKFRAME
+CAPTION "Colors"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Background color",IDC_STATIC,17,17,56,8
+    LTEXT           "Channels colors",IDC_STATIC,11,71,51,8
+    CONTROL         "One color",IDC_COLORS1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,10,86,47,10
+    CONTROL         "Two colors (odd/even)",IDC_COLORS2,"Button",
+                    BS_AUTORADIOBUTTON,10,106,88,10
+    CONTROL         "Cycle through colors",IDC_COLORSC,"Button",
+                    BS_AUTORADIOBUTTON,9,124,81,10
+    LTEXT           "",IDC_COLBG,117,14,17,16,SS_NOTIFY | SS_SUNKEN
+    LTEXT           "",IDC_COL1,119,79,17,16,SS_NOTIFY | SS_SUNKEN
+    LTEXT           "",IDC_COL2ODD,104,101,17,16,SS_NOTIFY | SS_SUNKEN
+    LTEXT           "",IDC_COL2EVEN,129,100,17,16,SS_NOTIFY | SS_SUNKEN
+    EDITTEXT        IDC_NUMCOL,106,123,33,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SNUMCOL,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNLEFT | UDS_AUTOBUDDY | UDS_ARROWKEYS,137,124,10,
+                    14
+    LISTBOX         IDC_COLLIST,41,144,77,59,LBS_OWNERDRAWFIXED | LBS_NODATA | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP,WS_EX_RIGHT
+    CONTROL         "",IDC_SEPARATOR,"Static",SS_ETCHEDFRAME | WS_BORDER,7,
+                    59,181,2
+    CONTROL         "Bipolar Background",IDC_BIPOLSEPCOLOR,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,16,36,77,10
+    LTEXT           "",IDC_COLBGBP,117,32,17,16,SS_NOTIFY | SS_SUNKEN
+END
+
+IDD_VIEWSETDLG DIALOGEX 0, 0, 186, 175
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "OscView settings"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,154,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,76,154,50,14
+    EDITTEXT        IDC_NAME,89,18,61,14,ES_AUTOHSCROLL
+    LTEXT           "Window Name",IDC_STATIC,31,22,46,8
+    PUSHBUTTON      "Load default settins",IDC_LOADDEF,35,60,115,21,
+                    BS_MULTILINE
+    PUSHBUTTON      "Save current settings\nas default",IDC_SAVEDEF,37,86,
+                    115,22,BS_MULTILINE
+    LTEXT           "Refresh timer",IDC_STATIC,33,39,44,8
+    EDITTEXT        IDC_TIME,89,36,21,14,ES_AUTOHSCROLL
+    LTEXT           "ms",IDC_STATIC,115,39,10,8
+    CONTROL         "Save Settings on Window Close",IDC_SAVEONCLOSE,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,37,137,117,10
+    PUSHBUTTON      "Save Settings Now",IDC_SAVENOW,37,113,115,21,
+                    BS_MULTILINE
+END
+
+IDD_TRIGVIEWDLG DIALOGEX 0, 0, 195, 252
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU | 
+    WS_THICKFRAME
+CAPTION "Trigger View"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "",IDC_TRCOL0,137,20,17,10,SS_NOTIFY | SS_SUNKEN
+    LTEXT           "",IDC_TRCOL1,137,33,17,10,SS_NOTIFY | SS_SUNKEN
+    LTEXT           "",IDC_TRCOL2,137,46,17,10,SS_NOTIFY | SS_SUNKEN
+    LTEXT           "",IDC_TRCOL3,137,59,17,10,SS_NOTIFY | SS_SUNKEN
+    LTEXT           "",IDC_TRCOL5,137,85,17,10,SS_NOTIFY | SS_SUNKEN
+    LTEXT           "",IDC_TRCOL6,137,98,17,10,SS_NOTIFY | SS_SUNKEN
+    LTEXT           "",IDC_TRCOL7,137,111,17,10,SS_NOTIFY | SS_SUNKEN
+    LTEXT           "",IDC_TRCOL8,137,130,17,10,SS_NOTIFY | SS_SUNKEN
+    LTEXT           "",IDC_TRCOL9,137,143,17,10,SS_NOTIFY | SS_SUNKEN
+    LTEXT           "",IDC_TRCOL10,137,156,17,10,SS_NOTIFY | SS_SUNKEN
+    LTEXT           "",IDC_TRCOL11,137,169,17,10,SS_NOTIFY | SS_SUNKEN
+    LTEXT           "",IDC_TRCOL12,137,182,17,10,SS_NOTIFY | SS_SUNKEN
+    LTEXT           "",IDC_TRCOL13,137,195,17,10,SS_NOTIFY | SS_SUNKEN
+    LTEXT           "",IDC_TRCOL14,137,208,17,10,SS_NOTIFY | SS_SUNKEN
+    LTEXT           "",IDC_TRCOL15,137,221,17,10,SS_NOTIFY | SS_SUNKEN
+    CONTROL         "LOW",IDC_LOW0,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | 
+                    BS_FLAT | WS_TABSTOP,78,20,39,10
+    LTEXT           "",IDC_TRCOL4,137,72,17,10,SS_NOTIFY | SS_SUNKEN
+    CONTROL         "LOW",IDC_LOW1,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | 
+                    BS_FLAT | WS_TABSTOP,78,33,39,10
+    CONTROL         "LOW",IDC_LOW2,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | 
+                    BS_FLAT | WS_TABSTOP,78,46,39,10
+    CONTROL         "LOW",IDC_LOW3,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | 
+                    BS_FLAT | WS_TABSTOP,78,59,39,10
+    CONTROL         "LOW",IDC_LOW4,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | 
+                    BS_FLAT | WS_TABSTOP,78,72,39,10
+    CONTROL         "LOW",IDC_LOW5,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | 
+                    BS_FLAT | WS_TABSTOP,78,85,39,10
+    CONTROL         "LOW",IDC_LOW6,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | 
+                    BS_FLAT | WS_TABSTOP,78,98,39,10
+    CONTROL         "LOW",IDC_LOW7,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | 
+                    BS_FLAT | WS_TABSTOP,78,111,39,10
+    CONTROL         "LOW",IDC_LOW8,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | 
+                    BS_FLAT | WS_TABSTOP,80,130,39,10
+    CONTROL         "LOW",IDC_LOW9,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | 
+                    BS_FLAT | WS_TABSTOP,80,143,39,10
+    CONTROL         "LOW",IDC_LOW10,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | 
+                    BS_FLAT | WS_TABSTOP,80,156,39,10
+    CONTROL         "LOW",IDC_LOW11,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | 
+                    BS_FLAT | WS_TABSTOP,80,169,39,10
+    CONTROL         "LOW",IDC_LOW12,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | 
+                    BS_FLAT | WS_TABSTOP,80,182,39,10
+    CONTROL         "LOW",IDC_LOW13,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | 
+                    BS_FLAT | WS_TABSTOP,80,195,39,10
+    CONTROL         "LOW",IDC_LOW14,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | 
+                    BS_FLAT | WS_TABSTOP,80,207,39,10
+    CONTROL         "LOW",IDC_LOW15,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | 
+                    BS_FLAT | WS_TABSTOP,80,220,39,10
+    LTEXT           "Bit 0",IDC_STATIC,46,21,15,8
+    LTEXT           "Bit 1",IDC_STATIC,46,34,15,8
+    LTEXT           "Bit 2",IDC_STATIC,46,47,15,8
+    LTEXT           "Bit 3",IDC_STATIC,46,60,15,8
+    LTEXT           "Bit 4",IDC_STATIC,46,73,15,8
+    LTEXT           "Bit 5",IDC_STATIC,46,86,15,8
+    LTEXT           "Bit 6",IDC_STATIC,46,99,15,8
+    LTEXT           "Bit 7",IDC_STATIC,46,112,15,8
+    LTEXT           "Bit 8",IDC_STATIC,46,131,15,8
+    LTEXT           "Bit 9",IDC_STATIC,46,144,15,8
+    LTEXT           "Bit 10",IDC_STATIC,46,157,19,8
+    LTEXT           "Bit 11",IDC_STATIC,46,170,19,8
+    LTEXT           "Bit 12",IDC_STATIC,46,183,19,8
+    LTEXT           "Bit 13",IDC_STATIC,46,196,19,8
+    LTEXT           "Bit 14",IDC_STATIC,46,208,19,8
+    LTEXT           "Bit 15",IDC_STATIC,46,221,19,8
+END
+
+IDD_PROGSET DIALOGEX 0, 0, 203, 252
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU | 
+    WS_THICKFRAME
+CAPTION "General and Windows settings"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Load Program settings on start",IDC_PROGLOAD,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | BS_CENTER | BS_MULTILINE | 
+                    WS_TABSTOP,40,21,112,17
+    CONTROL         "Save Program settings on Exit",IDC_PROGSAVE,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | BS_CENTER | BS_MULTILINE | 
+                    WS_TABSTOP,40,36,112,15
+    PUSHBUTTON      "Save Program settings Now",IDC_SAVENOW,42,57,114,14
+    CONTROL         "Load Window parameters for new window",IDC_WINLOAD,
+                    "Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | BS_CENTER | 
+                    BS_MULTILINE | WS_TABSTOP,43,94,112,24
+    CONTROL         "Default parameters",IDC_WINDEF,"Button",
+                    BS_AUTORADIOBUTTON | BS_LEFTTEXT | WS_GROUP,69,118,78,10
+    CONTROL         "Individual parameters",IDC_WININD,"Button",
+                    BS_AUTORADIOBUTTON | BS_LEFTTEXT,62,129,85,10
+    GROUPBOX        "Windows parameters",IDC_STATIC,23,86,144,59
+    GROUPBOX        "Program parameters",IDC_STATIC,23,12,144,67
+    CONTROL         "Store data files in:",IDC_BFOLDER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,27,173,75,10
+    EDITTEXT        IDC_EFOLDER,27,185,136,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse",IDC_BROWSE,116,171,45,12
+    CONTROL         "Type of experiment as subfolder",IDC_BEXP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,27,204,120,10
+    CONTROL         "Subject as subfolder",IDC_BSUBJ,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,27,217,81,10
+    GROUPBOX        "File storage parameters",IDC_STATIC,23,165,142,68
+    CONTROL         "'Plus' file format",IDC_PLUS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,28,152,66,10
+END
+
+IDD_ACQTRIGDLG DIALOGEX 0, 0, 220, 257
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CHILD | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Trigger and Acquøsition"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_MAINTIMER,79,2,40,14,ES_AUTOHSCROLL,0,HIDC_MAINTIMER
+    CONTROL         "&Gated",IDC_GATED,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,102,23,35,10,0,HIDC_GATED
+    CONTROL         "&Triggered",IDC_TRIGGERED,"Button",BS_AUTORADIOBUTTON,
+                    147,23,47,10,0,HIDC_TRIGGERED
+    EDITTEXT        IDC_FRAMELEN,80,39,40,12,ES_AUTOHSCROLL | WS_GROUP,0,
+                    HIDC_FRAMELEN
+    EDITTEXT        IDC_PRETRIG,54,56,31,12,ES_AUTOHSCROLL | WS_GROUP,0,
+                    HIDC_PRETRIG
+    EDITTEXT        IDC_POSTTRIG,148,56,31,12,ES_AUTOHSCROLL,0,HIDC_POSTTRIG
+    EDITTEXT        IDC_TRIDLE,94,68,31,12,ES_AUTOHSCROLL,0,HIDC_TRIDLE
+    LTEXT           "Record length",IDC_STATIC,34,42,46,8,0,0,HIDC_STATIC
+    LTEXT           "ms (100 - 10000)",IDC_STATIC,125,42,56,8,0,0,
+                    HIDC_STATIC
+    GROUPBOX        "Aquisition Type",IDC_STATIC,17,15,183,20,0,0,
+                    HIDC_STATIC
+    LTEXT           "Pre-trigger",IDC_TST0,18,59,36,8,0,0,HIDC_TST0
+    LTEXT           "ms",IDC_TST1,90,59,10,8,0,0,HIDC_TST1
+    LTEXT           "Post-trigger",IDC_TST2,108,59,37,8,0,0,HIDC_TST2
+    LTEXT           "ms",IDC_TST3,181,58,10,8,0,0,HIDC_TST3
+    LTEXT           "Bit",IDC_TST4,29,94,9,8,0,0,HIDC_TST4
+    LTEXT           "Low->Hi",IDC_TST5,14,102,28,8,0,0,HIDC_TST5
+    LTEXT           "Hi->Low",IDC_TST6,14,111,28,8,0,0,HIDC_TST6
+    CTEXT           "0",IDC_TB0,44,93,8,8,0,0,HIDC_TB0
+    CTEXT           "1",IDC_TB1,54,93,8,8,0,0,HIDC_TB1
+    CTEXT           "2",IDC_TB2,65,93,8,8,0,0,HIDC_TB2
+    CTEXT           "3",IDC_TB3,75,93,8,8,0,0,HIDC_TB3
+    CTEXT           "4",IDC_TB4,84,93,8,8,0,0,HIDC_TB4
+    CTEXT           "5",IDC_TB5,95,93,8,8,0,0,HIDC_TB5
+    CTEXT           "6",IDC_TB6,105,93,8,8,0,0,HIDC_TB6
+    CTEXT           "7",IDC_TB7,114,93,8,8,0,0,HIDC_TB7
+    CTEXT           "8",IDC_TB8,126,93,8,8,0,0,HIDC_TB8
+    CTEXT           "9",IDC_TB9,135,93,8,8,0,0,HIDC_TB9
+    LTEXT           "10",IDC_TBA,144,93,9,8,0,0,HIDC_TBA
+    LTEXT           "11",IDC_TBB,154,93,9,8,0,0,HIDC_TBB
+    LTEXT           "12",IDC_TBC,164,93,9,8,0,0,HIDC_TBC
+    LTEXT           "13",IDC_TBD,174,93,9,8,0,0,HIDC_TBD
+    LTEXT           "14",IDC_TBE,184,93,9,8,0,0,HIDC_TBE
+    LTEXT           "15",IDC_TBF,194,93,9,8,0,0,HIDC_TBF
+    CONTROL         "",IDC_LOHI0,"Button",BS_AUTOCHECKBOX | BS_ICON | 
+                    WS_GROUP | WS_TABSTOP,44,102,9,8,0,HIDC_LOHI0
+    CONTROL         "",IDC_LOHI1,"Button",BS_AUTOCHECKBOX,54,102,9,8,0,
+                    HIDC_LOHI1
+    CONTROL         "",IDC_LOHI2,"Button",BS_AUTOCHECKBOX,64,102,9,8,0,
+                    HIDC_LOHI2
+    CONTROL         "",IDC_LOHI3,"Button",BS_AUTOCHECKBOX,74,102,9,8,0,
+                    HIDC_LOHI3
+    CONTROL         "",IDC_LOHI4,"Button",BS_AUTOCHECKBOX,84,102,9,8,0,
+                    HIDC_LOHI4
+    CONTROL         "",IDC_LOHI5,"Button",BS_AUTOCHECKBOX,94,102,9,8,0,
+                    HIDC_LOHI5
+    CONTROL         "",IDC_LOHI6,"Button",BS_AUTOCHECKBOX,104,102,9,8,0,
+                    HIDC_LOHI6
+    CONTROL         "",IDC_LOHI7,"Button",BS_AUTOCHECKBOX,114,102,9,8,0,
+                    HIDC_LOHI7
+    CONTROL         "",IDC_LOHI8,"Button",BS_AUTOCHECKBOX,124,102,9,8,0,
+                    HIDC_LOHI8
+    CONTROL         "",IDC_LOHI9,"Button",BS_AUTOCHECKBOX,134,102,9,8,0,
+                    HIDC_LOHI9
+    CONTROL         "",IDC_LOHIA,"Button",BS_AUTOCHECKBOX,144,102,9,8,0,
+                    HIDC_LOHIA
+    CONTROL         "",IDC_LOHIB,"Button",BS_AUTOCHECKBOX,154,102,9,8,0,
+                    HIDC_LOHIB
+    CONTROL         "",IDC_LOHIC,"Button",BS_AUTOCHECKBOX,164,102,9,8,0,
+                    HIDC_LOHIC
+    CONTROL         "",IDC_LOHID,"Button",BS_AUTOCHECKBOX,174,102,9,8,0,
+                    HIDC_LOHID
+    CONTROL         "",IDC_LOHIE,"Button",BS_AUTOCHECKBOX,184,102,9,8,0,
+                    HIDC_LOHIE
+    CONTROL         "",IDC_LOHIF,"Button",BS_AUTOCHECKBOX,194,102,9,8,0,
+                    HIDC_LOHIF
+    CONTROL         "",IDC_HILO0,"Button",BS_AUTOCHECKBOX | BS_ICON | 
+                    WS_GROUP | WS_TABSTOP,44,111,9,8,0,HIDC_HILO0
+    CONTROL         "",IDC_HILO1,"Button",BS_AUTOCHECKBOX,54,111,9,8,0,
+                    HIDC_HILO1
+    CONTROL         "",IDC_HILO2,"Button",BS_AUTOCHECKBOX,64,111,9,8,0,
+                    HIDC_HILO2
+    CONTROL         "",IDC_HILO3,"Button",BS_AUTOCHECKBOX,74,111,9,8,0,
+                    HIDC_HILO3
+    CONTROL         "",IDC_HILO4,"Button",BS_AUTOCHECKBOX,84,111,9,8,0,
+                    HIDC_HILO4
+    CONTROL         "",IDC_HILO5,"Button",BS_AUTOCHECKBOX,94,111,9,8,0,
+                    HIDC_HILO5
+    CONTROL         "",IDC_HILO6,"Button",BS_AUTOCHECKBOX,104,111,9,8,0,
+                    HIDC_HILO6
+    CONTROL         "",IDC_HILO7,"Button",BS_AUTOCHECKBOX,114,111,9,8,0,
+                    HIDC_HILO7
+    CONTROL         "",IDC_HILO8,"Button",BS_AUTOCHECKBOX,124,111,9,8,0,
+                    HIDC_HILO8
+    CONTROL         "",IDC_HILO9,"Button",BS_AUTOCHECKBOX,134,111,9,8,0,
+                    HIDC_HILO9
+    CONTROL         "",IDC_HILOA,"Button",BS_AUTOCHECKBOX,144,111,9,8,0,
+                    HIDC_HILOA
+    CONTROL         "",IDC_HILOB,"Button",BS_AUTOCHECKBOX,154,111,9,8,0,
+                    HIDC_HILOB
+    CONTROL         "",IDC_HILOC,"Button",BS_AUTOCHECKBOX,164,111,9,8,0,
+                    HIDC_HILOC
+    CONTROL         "",IDC_HILOD,"Button",BS_AUTOCHECKBOX,174,111,9,8,0,
+                    HIDC_HILOD
+    CONTROL         "",IDC_HILOE,"Button",BS_AUTOCHECKBOX,184,111,9,8,0,
+                    HIDC_HILOE
+    CONTROL         "",IDC_HILOF,"Button",BS_AUTOCHECKBOX,194,111,9,8,0,
+                    HIDC_HILOF
+    CONTROL         "AND",IDC_AND1,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | 
+                    WS_TABSTOP,18,135,26,10,0,HIDC_AND1
+    LTEXT           "Bit",IDC_TSA1,33,144,9,8,0,0,HIDC_TSA1
+    RTEXT           "High",IDC_TSA2,14,152,28,8,0,0,HIDC_TSA2
+    RTEXT           "Low",IDC_TSA3,14,161,28,8,0,0,HIDC_TSA3
+    CTEXT           "0",IDC_AB0,47,142,8,8,0,0,HIDC_AB0
+    CTEXT           "1",IDC_AB1,57,142,8,8,0,0,HIDC_AB1
+    CTEXT           "2",IDC_AB2,69,142,8,8,0,0,HIDC_AB2
+    CTEXT           "3",IDC_AB3,79,142,8,8,0,0,HIDC_AB3
+    CTEXT           "4",IDC_AB4,87,142,8,8,0,0,HIDC_AB4
+    CTEXT           "5",IDC_AB5,99,142,8,8,0,0,HIDC_AB5
+    CTEXT           "6",IDC_AB6,109,142,8,8,0,0,HIDC_AB6
+    CTEXT           "7",IDC_AB7,117,142,8,8,0,0,HIDC_AB7
+    CTEXT           "8",IDC_AB8,129,142,8,8,0,0,HIDC_AB8
+    CTEXT           "9",IDC_AB9,139,142,8,8,0,0,HIDC_AB9
+    CTEXT           "10",IDC_ABA,147,142,9,8,0,0,HIDC_ABA
+    CTEXT           "11",IDC_ABB,157,142,9,8,0,0,HIDC_ABB
+    CTEXT           "12",IDC_ABC,167,142,9,8,0,0,HIDC_ABC
+    CTEXT           "13",IDC_ABD,177,142,9,8,0,0,HIDC_ABD
+    CTEXT           "14",IDC_ABE,187,142,9,8,0,0,HIDC_ABE
+    CTEXT           "15",IDC_ABF,197,142,9,8,0,0,HIDC_ABF
+    CONTROL         "",IDC_HIA0,"Button",BS_AUTOCHECKBOX | BS_ICON | 
+                    WS_GROUP | WS_TABSTOP,47,152,9,8,0,HIDC_HIA0
+    CONTROL         "",IDC_HIA1,"Button",BS_AUTOCHECKBOX,57,152,9,8,0,
+                    HIDC_HIA1
+    CONTROL         "",IDC_HIA2,"Button",BS_AUTOCHECKBOX,67,152,9,8,0,
+                    HIDC_HIA2
+    CONTROL         "",IDC_HIA3,"Button",BS_AUTOCHECKBOX,77,152,9,8,0,
+                    HIDC_HIA3
+    CONTROL         "",IDC_HIA4,"Button",BS_AUTOCHECKBOX,87,152,9,8,0,
+                    HIDC_HIA4
+    CONTROL         "",IDC_HIA5,"Button",BS_AUTOCHECKBOX,97,152,9,8,0,
+                    HIDC_HIA5
+    CONTROL         "",IDC_HIA6,"Button",BS_AUTOCHECKBOX,107,152,9,8,0,
+                    HIDC_HIA6
+    CONTROL         "",IDC_HIA7,"Button",BS_AUTOCHECKBOX,117,152,9,8,0,
+                    HIDC_HIA7
+    CONTROL         "",IDC_HIA8,"Button",BS_AUTOCHECKBOX,127,152,9,8,0,
+                    HIDC_HIA8
+    CONTROL         "",IDC_HIA9,"Button",BS_AUTOCHECKBOX,137,152,9,8,0,
+                    HIDC_HIA9
+    CONTROL         "",IDC_HIAA,"Button",BS_AUTOCHECKBOX,147,152,9,8,0,
+                    HIDC_HIAA
+    CONTROL         "",IDC_HIAB,"Button",BS_AUTOCHECKBOX,157,152,9,8,0,
+                    HIDC_HIAB
+    CONTROL         "",IDC_HIAC,"Button",BS_AUTOCHECKBOX,167,152,9,8,0,
+                    HIDC_HIAC
+    CONTROL         "",IDC_HIAD,"Button",BS_AUTOCHECKBOX,177,152,9,8,0,
+                    HIDC_HIAD
+    CONTROL         "",IDC_HIAE,"Button",BS_AUTOCHECKBOX,187,152,9,8,0,
+                    HIDC_HIAE
+    CONTROL         "",IDC_HIAF,"Button",BS_AUTOCHECKBOX,197,152,9,8,0,
+                    HIDC_HIAF
+    CONTROL         "",IDC_LOA0,"Button",BS_AUTOCHECKBOX | BS_ICON | 
+                    WS_GROUP | WS_TABSTOP,47,161,9,8,0,HIDC_LOA0
+    CONTROL         "",IDC_LOA1,"Button",BS_AUTOCHECKBOX,57,161,9,8,0,
+                    HIDC_LOA1
+    CONTROL         "",IDC_LOA2,"Button",BS_AUTOCHECKBOX,67,161,9,8,0,
+                    HIDC_LOA2
+    CONTROL         "",IDC_LOA3,"Button",BS_AUTOCHECKBOX,77,161,9,8,0,
+                    HIDC_LOA3
+    CONTROL         "",IDC_LOA4,"Button",BS_AUTOCHECKBOX,87,161,9,8,0,
+                    HIDC_LOA4
+    CONTROL         "",IDC_LOA5,"Button",BS_AUTOCHECKBOX,97,161,9,8,0,
+                    HIDC_LOA5
+    CONTROL         "",IDC_LOA6,"Button",BS_AUTOCHECKBOX,107,161,9,8,0,
+                    HIDC_LOA6
+    CONTROL         "",IDC_LOA7,"Button",BS_AUTOCHECKBOX,117,161,9,8,0,
+                    HIDC_LOA7
+    CONTROL         "",IDC_LOA8,"Button",BS_AUTOCHECKBOX,127,161,9,8,0,
+                    HIDC_LOA8
+    CONTROL         "",IDC_LOA9,"Button",BS_AUTOCHECKBOX,137,161,9,8,0,
+                    HIDC_LOA9
+    CONTROL         "",IDC_LOAA,"Button",BS_AUTOCHECKBOX,147,161,9,8,0,
+                    HIDC_LOAA
+    CONTROL         "",IDC_LOAB,"Button",BS_AUTOCHECKBOX,157,161,9,8,0,
+                    HIDC_LOAB
+    CONTROL         "",IDC_LOAC,"Button",BS_AUTOCHECKBOX,167,161,9,8,0,
+                    HIDC_LOAC
+    CONTROL         "",IDC_LOAD,"Button",BS_AUTOCHECKBOX,177,161,9,8,0,
+                    HIDC_LOAD
+    CONTROL         "",IDC_LOAE,"Button",BS_AUTOCHECKBOX,187,161,9,8,0,
+                    HIDC_LOAE
+    CONTROL         "",IDC_LOAF,"Button",BS_AUTOCHECKBOX,197,161,9,8,0,
+                    HIDC_LOAF
+    CONTROL         "AND",IDC_AND2,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | 
+                    WS_TABSTOP,18,178,26,10,0,HIDC_AND2
+    LTEXT           "Bit",IDC_TSB1,34,186,9,8,0,0,HIDC_TSB1
+    LTEXT           "High",IDC_TSB2,28,194,15,8,0,0,HIDC_TSB2
+    LTEXT           "Low",IDC_TSB3,28,204,14,8,0,0,HIDC_TSB3
+    CTEXT           "0",IDC_BB0,48,185,8,8,0,0,HIDC_BB0
+    CTEXT           "1",IDC_BB1,58,185,8,8,0,0,HIDC_BB1
+    CTEXT           "2",IDC_BB2,70,185,8,8,0,0,HIDC_BB2
+    CTEXT           "3",IDC_BB3,80,185,8,8,0,0,HIDC_BB3
+    CTEXT           "4",IDC_BB4,88,185,8,8,0,0,HIDC_BB4
+    CTEXT           "5",IDC_BB5,100,185,8,8,0,0,HIDC_BB5
+    CTEXT           "6",IDC_BB6,110,185,8,8,0,0,HIDC_BB6
+    CTEXT           "7",IDC_BB7,119,185,8,8,0,0,HIDC_BB7
+    CTEXT           "8",IDC_BB8,130,185,8,8,0,0,HIDC_BB8
+    CTEXT           "9",IDC_BB9,140,185,8,8,0,0,HIDC_BB9
+    CTEXT           "10",IDC_BBA,148,185,9,8,0,0,HIDC_BBA
+    CTEXT           "11",IDC_BBB,158,185,9,8,0,0,HIDC_BBB
+    CTEXT           "12",IDC_BBC,168,185,9,8,0,0,HIDC_BBC
+    CTEXT           "13",IDC_BBD,178,185,9,8,0,0,HIDC_BBD
+    CTEXT           "14",IDC_BBE,188,185,9,8,0,0,HIDC_BBE
+    CTEXT           "15",IDC_BBF,198,185,9,8,0,0,HIDC_BBF
+    CONTROL         "",IDC_HIB0,"Button",BS_AUTOCHECKBOX | BS_ICON | 
+                    WS_GROUP | WS_TABSTOP,48,194,9,8,0,HIDC_HIB0
+    CONTROL         "",IDC_HIB1,"Button",BS_AUTOCHECKBOX,58,194,9,8,0,
+                    HIDC_HIB1
+    CONTROL         "",IDC_HIB2,"Button",BS_AUTOCHECKBOX,68,194,9,8,0,
+                    HIDC_HIB2
+    CONTROL         "",IDC_HIB3,"Button",BS_AUTOCHECKBOX,78,194,9,8,0,
+                    HIDC_HIB3
+    CONTROL         "",IDC_HIB4,"Button",BS_AUTOCHECKBOX,88,194,9,8,0,
+                    HIDC_HIB4
+    CONTROL         "",IDC_HIB5,"Button",BS_AUTOCHECKBOX,98,194,9,8,0,
+                    HIDC_HIB5
+    CONTROL         "",IDC_HIB6,"Button",BS_AUTOCHECKBOX,108,194,9,8,0,
+                    HIDC_HIB6
+    CONTROL         "",IDC_HIB7,"Button",BS_AUTOCHECKBOX,118,194,9,8,0,
+                    HIDC_HIB7
+    CONTROL         "",IDC_HIB8,"Button",BS_AUTOCHECKBOX,128,194,9,8,0,
+                    HIDC_HIB8
+    CONTROL         "",IDC_HIB9,"Button",BS_AUTOCHECKBOX,138,194,9,8,0,
+                    HIDC_HIB9
+    CONTROL         "",IDC_HIBA,"Button",BS_AUTOCHECKBOX,148,194,9,8,0,
+                    HIDC_HIBA
+    CONTROL         "",IDC_HIBB,"Button",BS_AUTOCHECKBOX,158,194,9,8,0,
+                    HIDC_HIBB
+    CONTROL         "",IDC_HIBC,"Button",BS_AUTOCHECKBOX,168,194,9,8,0,
+                    HIDC_HIBC
+    CONTROL         "",IDC_HIBD,"Button",BS_AUTOCHECKBOX,178,194,9,8,0,
+                    HIDC_HIBD
+    CONTROL         "",IDC_HIBE,"Button",BS_AUTOCHECKBOX,188,194,9,8,0,
+                    HIDC_HIBE
+    CONTROL         "",IDC_HIBF,"Button",BS_AUTOCHECKBOX,198,194,9,8,0,
+                    HIDC_HIBF
+    CONTROL         "",IDC_LOB0,"Button",BS_AUTOCHECKBOX | BS_ICON | 
+                    WS_GROUP | WS_TABSTOP,48,204,9,8,0,HIDC_LOB0
+    CONTROL         "",IDC_LOB1,"Button",BS_AUTOCHECKBOX,58,204,9,8,0,
+                    HIDC_LOB1
+    CONTROL         "",IDC_LOB2,"Button",BS_AUTOCHECKBOX,68,204,9,8,0,
+                    HIDC_LOB2
+    CONTROL         "",IDC_LOB3,"Button",BS_AUTOCHECKBOX,78,204,9,8,0,
+                    HIDC_LOB3
+    CONTROL         "",IDC_LOB4,"Button",BS_AUTOCHECKBOX,88,204,9,8,0,
+                    HIDC_LOB4
+    CONTROL         "",IDC_LOB5,"Button",BS_AUTOCHECKBOX,98,204,9,8,0,
+                    HIDC_LOB5
+    CONTROL         "",IDC_LOB6,"Button",BS_AUTOCHECKBOX,108,204,9,8,0,
+                    HIDC_LOB6
+    CONTROL         "",IDC_LOB7,"Button",BS_AUTOCHECKBOX,118,204,9,8,0,
+                    HIDC_LOB7
+    CONTROL         "",IDC_LOB8,"Button",BS_AUTOCHECKBOX,128,204,9,8,0,
+                    HIDC_LOB8
+    CONTROL         "",IDC_LOB9,"Button",BS_AUTOCHECKBOX,138,204,9,8,0,
+                    HIDC_LOB9
+    CONTROL         "",IDC_LOBA,"Button",BS_AUTOCHECKBOX,148,204,9,8,0,
+                    HIDC_LOBA
+    CONTROL         "",IDC_LOBB,"Button",BS_AUTOCHECKBOX,158,204,9,8,0,
+                    HIDC_LOBB
+    CONTROL         "",IDC_LOBC,"Button",BS_AUTOCHECKBOX,168,204,9,8,0,
+                    HIDC_LOBC
+    CONTROL         "",IDC_LOBD,"Button",BS_AUTOCHECKBOX,178,204,9,8,0,
+                    HIDC_LOBD
+    CONTROL         "",IDC_LOBE,"Button",BS_AUTOCHECKBOX,188,204,9,8,0,
+                    HIDC_LOBE
+    CONTROL         "",IDC_LOBF,"Button",BS_AUTOCHECKBOX,198,204,9,8,0,
+                    HIDC_LOBF
+    CONTROL         "AND",IDC_AND3,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | 
+                    WS_GROUP | WS_TABSTOP,18,218,26,10,0,HIDC_AND3
+    LTEXT           "Bit",IDC_TSC1,34,226,9,8,0,0,HIDC_TSC1
+    LTEXT           "High",IDC_TSC2,28,234,15,8,0,0,HIDC_TSC2
+    LTEXT           "Low",IDC_TSC3,28,244,14,8,0,0,HIDC_TSC3
+    CTEXT           "0",IDC_CB0,48,225,8,8,NOT WS_GROUP,0,HIDC_CB0
+    CTEXT           "1",IDC_CB1,58,225,8,8,NOT WS_GROUP,0,HIDC_CB1
+    CTEXT           "2",IDC_CB2,70,225,8,8,NOT WS_GROUP,0,HIDC_CB2
+    CTEXT           "3",IDC_CB3,80,225,8,8,NOT WS_GROUP,0,HIDC_CB3
+    CTEXT           "4",IDC_CB4,88,225,8,8,NOT WS_GROUP,0,HIDC_CB4
+    CTEXT           "5",IDC_CB5,99,225,8,8,NOT WS_GROUP,0,HIDC_CB5
+    CTEXT           "6",IDC_CB6,110,225,8,8,NOT WS_GROUP,0,HIDC_CB6
+    CTEXT           "7",IDC_CB7,118,225,8,8,NOT WS_GROUP,0,HIDC_CB7
+    CTEXT           "8",IDC_CB8,130,225,8,8,NOT WS_GROUP,0,HIDC_CB8
+    CTEXT           "9",IDC_CB9,140,225,8,8,NOT WS_GROUP,0,HIDC_CB9
+    CTEXT           "10",IDC_CBA,148,225,9,8,NOT WS_GROUP,0,HIDC_CBA
+    CTEXT           "11",IDC_CBB,158,225,9,8,NOT WS_GROUP,0,HIDC_CBB
+    CTEXT           "12",IDC_CBC,168,225,9,8,NOT WS_GROUP,0,HIDC_CBC
+    CTEXT           "13",IDC_CBD,178,225,9,8,NOT WS_GROUP,0,HIDC_CBD
+    CTEXT           "14",IDC_CBE,188,225,9,8,NOT WS_GROUP,0,HIDC_CBE
+    CTEXT           "15",IDC_CBF,198,225,9,8,NOT WS_GROUP,0,HIDC_CBF
+    CONTROL         "",IDC_HIC0,"Button",BS_AUTOCHECKBOX | BS_ICON | 
+                    WS_GROUP | WS_TABSTOP,48,234,9,8,0,HIDC_HIC0
+    CONTROL         "",IDC_HIC1,"Button",BS_AUTOCHECKBOX,58,234,9,8,0,
+                    HIDC_HIC1
+    CONTROL         "",IDC_HIC2,"Button",BS_AUTOCHECKBOX,68,234,9,8,0,
+                    HIDC_HIC2
+    CONTROL         "",IDC_HIC3,"Button",BS_AUTOCHECKBOX,78,234,9,8,0,
+                    HIDC_HIC3
+    CONTROL         "",IDC_HIC4,"Button",BS_AUTOCHECKBOX,88,234,9,8,0,
+                    HIDC_HIC4
+    CONTROL         "",IDC_HIC5,"Button",BS_AUTOCHECKBOX,98,234,9,8,0,
+                    HIDC_HIC5
+    CONTROL         "",IDC_HIC6,"Button",BS_AUTOCHECKBOX,108,234,9,8,0,
+                    HIDC_HIC6
+    CONTROL         "",IDC_HIC7,"Button",BS_AUTOCHECKBOX,118,234,9,8,0,
+                    HIDC_HIC7
+    CONTROL         "",IDC_HIC8,"Button",BS_AUTOCHECKBOX,128,234,9,8,0,
+                    HIDC_HIC8
+    CONTROL         "",IDC_HIC9,"Button",BS_AUTOCHECKBOX,138,234,9,8,0,
+                    HIDC_HIC9
+    CONTROL         "",IDC_HICA,"Button",BS_AUTOCHECKBOX,148,234,9,8,0,
+                    HIDC_HICA
+    CONTROL         "",IDC_HICB,"Button",BS_AUTOCHECKBOX,158,234,9,8,0,
+                    HIDC_HICB
+    CONTROL         "",IDC_HICC,"Button",BS_AUTOCHECKBOX,168,234,9,8,0,
+                    HIDC_HICC
+    CONTROL         "",IDC_HICD,"Button",BS_AUTOCHECKBOX,178,234,9,8,0,
+                    HIDC_HICD
+    CONTROL         "",IDC_HICE,"Button",BS_AUTOCHECKBOX,188,234,9,8,0,
+                    HIDC_HICE
+    CONTROL         "",IDC_HICF,"Button",BS_AUTOCHECKBOX,198,234,9,8,0,
+                    HIDC_HICF
+    CONTROL         "",IDC_LOC0,"Button",BS_AUTOCHECKBOX | BS_ICON | 
+                    WS_GROUP | WS_TABSTOP,48,244,9,8,0,HIDC_LOC0
+    CONTROL         "",IDC_LOC1,"Button",BS_AUTOCHECKBOX,58,244,9,8,0,
+                    HIDC_LOC1
+    CONTROL         "",IDC_LOC2,"Button",BS_AUTOCHECKBOX,68,244,9,8,0,
+                    HIDC_LOC2
+    CONTROL         "",IDC_LOC3,"Button",BS_AUTOCHECKBOX,78,244,9,8,0,
+                    HIDC_LOC3
+    CONTROL         "",IDC_LOC4,"Button",BS_AUTOCHECKBOX,88,244,9,8,0,
+                    HIDC_LOC4
+    CONTROL         "",IDC_LOC5,"Button",BS_AUTOCHECKBOX,98,244,9,8,0,
+                    HIDC_LOC5
+    CONTROL         "",IDC_LOC6,"Button",BS_AUTOCHECKBOX,108,244,9,8,0,
+                    HIDC_LOC6
+    CONTROL         "",IDC_LOC7,"Button",BS_AUTOCHECKBOX,118,244,9,8,0,
+                    HIDC_LOC7
+    CONTROL         "",IDC_LOC8,"Button",BS_AUTOCHECKBOX,128,244,9,8,0,
+                    HIDC_LOC8
+    CONTROL         "",IDC_LOC9,"Button",BS_AUTOCHECKBOX,138,244,9,8,0,
+                    HIDC_LOC9
+    CONTROL         "",IDC_LOCA,"Button",BS_AUTOCHECKBOX,148,244,9,8,0,
+                    HIDC_LOCA
+    CONTROL         "",IDC_LOCB,"Button",BS_AUTOCHECKBOX,158,244,9,8,0,
+                    HIDC_LOCB
+    CONTROL         "",IDC_LOCC,"Button",BS_AUTOCHECKBOX,168,244,9,8,0,
+                    HIDC_LOCC
+    CONTROL         "",IDC_LOCD,"Button",BS_AUTOCHECKBOX,178,244,9,8,0,
+                    HIDC_LOCD
+    CONTROL         "",IDC_LOCE,"Button",BS_AUTOCHECKBOX,188,244,9,8,0,
+                    HIDC_LOCE
+    CONTROL         "",IDC_LOCF,"Button",BS_AUTOCHECKBOX,198,244,9,8,0,
+                    HIDC_LOCF
+    LTEXT           "START Trigger",IDC_TSTN,87,83,47,8,0,0,HIDC_TSTN
+    GROUPBOX        "Gate conditions",IDC_GATE0,6,126,207,130,BS_CENTER,0,
+                    HIDC_GATE0
+    GROUPBOX        "Gate conditions",IDC_GATE1,6,126,207,90,BS_CENTER,0,
+                    HIDC_GATE1
+    LTEXT           "Free input gate",IDC_SFREE,82,216,50,8,0,0,HIDC_SFREE
+    LTEXT           "ms",IDC_TST7,130,72,10,8,0,0,HIDC_TST7
+    LTEXT           "Trigger Idle time",IDC_TST8,35,72,53,8,0,0,HIDC_TST8
+    LTEXT           "Main timer ",IDC_STATIC,38,5,36,8,0,0,HIDC_STATIC
+    LTEXT           "ms",IDC_STATIC,126,4,10,8,0,0,HIDC_STATIC
+END
+
+IDD_OFFSETPAGE DIALOGEX 0, 0, 195, 252
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU | 
+    WS_THICKFRAME
+CAPTION "Offset to colors mapping"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "",IDC_OFCOL4,126,84,17,16,SS_NOTIFY | SS_SUNKEN
+    EDITTEXT        IDC_MV4,30,99,32,14,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "",IDC_OFCOL3,126,113,17,16,SS_NOTIFY | SS_SUNKEN
+    EDITTEXT        IDC_MV3,30,128,32,14,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "",IDC_OFCOL2,126,140,17,16,SS_NOTIFY | SS_SUNKEN
+    EDITTEXT        IDC_MV2,30,153,32,14,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "",IDC_OFCOL1,126,164,17,16,SS_NOTIFY | SS_SUNKEN
+    EDITTEXT        IDC_MV1,30,182,32,14,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "",IDC_OFCOL0,127,192,17,16,SS_NOTIFY | SS_SUNKEN
+    RTEXT           "0",IDC_STATIC,30,208,32,14,SS_SUNKEN
+    LTEXT           " mV ---------------------------",IDC_STATIC,62,102,86,8
+    LTEXT           " mV ---------------------------",IDC_STATIC,62,131,86,8
+    LTEXT           " mV ---------------------------",IDC_STATIC,62,156,86,8
+    LTEXT           " mV ---------------------------",IDC_STATIC,62,182,86,8
+    CTEXT           "Color mapping for electrode offset (absolute values)",
+                    IDC_STATIC,25,56,138,19
+    LTEXT           "250",IDC_STATIC,30,75,32,14,SS_SUNKEN,WS_EX_RIGHT
+    LTEXT           " mV ---------------------------",IDC_STATIC,62,76,86,8
+    LTEXT           " mV ---------------------------",IDC_STATIC,62,208,86,8
+    LTEXT           "",IDC_OFCOLNODATA,136,28,17,16,SS_NOTIFY | SS_SUNKEN
+    LTEXT           "",IDC_OFCOLANAVAIL,34,30,17,16,SS_NOTIFY | SS_SUNKEN
+    LTEXT           "",IDC_OFCOLOFF,85,29,17,16,SS_NOTIFY | SS_SUNKEN
+    CTEXT           "Anavailable channel",IDC_STATIC,24,10,38,15
+    CTEXT           "Switched OFF",IDC_STATIC,73,10,38,15
+    CTEXT           "ON,\n No data",IDC_STATIC,125,10,36,15
+END
+
+IDD_OSCDLG DIALOGEX 0, 0, 390, 95
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 8, "Microsoft Sans Serif", 400, 0, 0xCC
+BEGIN
+    CONTROL         "",IDC_FRAME,"Static",SS_BLACKFRAME | SS_NOTIFY,105,11,
+                    98,79
+    CONTROL         "",IDC_FRAME2,"Static",SS_BLACKFRAME | SS_NOTIFY,208,11,
+                    98,79
+    LTEXT           "Display",IDC_DISPTXT,135,0,24,8
+    LTEXT           "Reference",IDC_REFTXT,242,0,36,8
+    PUSHBUTTON      "X",IDC_CLOSE,368,2,11,8,NOT WS_TABSTOP
+    CONTROL         "Trigger",IDC_TRIGGER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,320,80,39,10
+    CONTROL         "Bipolar",IDC_BIPOLAR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,318,1,33,10
+    CONTROL         "",IDC_BPLIST,"SysListView32",LVS_REPORT | 
+                    LVS_NOLABELWRAP | LVS_ALIGNLEFT | LVS_NOCOLUMNHEADER | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,314,11,65,51
+    LTEXT           "Length(s)",IDC_SLENGTH,16,15,32,8
+    LTEXT           "Low-pass",IDC_STATIC,14,33,31,8
+    LTEXT           "High-pass",IDC_STATIC,14,48,32,8
+    GROUPBOX        "Filters (Hz) ",IDC_FILTERS,7,24,96,38,BS_NOTIFY,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_SCALE,43,63,40,13,ES_RIGHT | ES_AUTOHSCROLL
+    CONTROL         "",IDC_SSCALE,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNLEFT | UDS_AUTOBUDDY | UDS_ARROWKEYS,39,44,10,
+                    14
+    LTEXT           "Scale",IDC_STATIC,16,66,18,8
+    CTEXT           "uV",IDC_SCALEUNIT,84,65,16,10,SS_SUNKEN
+    CONTROL         "Scrolling",IDC_SCROLL,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,166,1,38,10
+    PUSHBUTTON      "Zero",IDC_ZERO,209,1,32,9
+    COMBOBOX        IDC_CMBFLP,51,29,48,30,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_CMBFHP,51,45,48,30,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_LENGTH,60,13,29,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_S_LENGTH,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNLEFT | UDS_AUTOBUDDY | UDS_ARROWKEYS,55,14,10,
+                    14
+    PUSHBUTTON      "S",IDC_TOOL,7,0,13,12,BS_BITMAP
+    EDITTEXT        IDC_BPSCALE,336,64,35,13,ES_RIGHT | ES_AUTOHSCROLL
+    CONTROL         "",IDC_SBPSCALE,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNLEFT | UDS_AUTOBUDDY | UDS_ARROWKEYS,330,64,10,
+                    14
+    LTEXT           "Scale",IDC_BPSTATIC,312,67,18,8
+    CTEXT           "uV",IDC_BPSCALEUNIT,371,66,16,10,SS_SUNKEN
+END
+
+IDD_SNAPDLG DIALOGEX 0, 0, 390, 95
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 8, "Microsoft Sans Serif", 400, 0, 0xCC
+BEGIN
+    PUSHBUTTON      "S",IDC_TOOL,7,0,13,12,BS_BITMAP
+    EDITTEXT        IDC_TRNUM,42,10,29,14,ES_RIGHT | ES_AUTOHSCROLL
+    CONTROL         "",IDC_STRNUM,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_AUTOBUDDY | UDS_ARROWKEYS | NOT WS_VISIBLE,2,64,11,
+                    14
+    PUSHBUTTON      "<<",IDC_TRFIRST,20,12,10,10,BS_CENTER
+    PUSHBUTTON      "<",IDC_TRPREV,31,12,10,10,BS_CENTER
+    PUSHBUTTON      ">",IDC_TRNEXT,73,12,10,10,BS_CENTER
+    PUSHBUTTON      ">>",IDC_TRLAST,84,12,10,10,BS_CENTER
+    CONTROL         "Bipolar",IDC_BIPOLAR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,318,1,33,10
+    COMBOBOX        IDC_CMBFLP,51,29,48,30,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_CMBFHP,51,45,48,30,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_SCALE,43,63,40,13,ES_RIGHT | ES_AUTOHSCROLL
+    CONTROL         "",IDC_SSCALE,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNLEFT | UDS_AUTOBUDDY | UDS_ARROWKEYS,34,62,10,
+                    14
+    CONTROL         "",IDC_BPLIST,"SysListView32",LVS_REPORT | 
+                    LVS_NOLABELWRAP | LVS_ALIGNLEFT | LVS_NOCOLUMNHEADER | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,314,11,65,52
+    CONTROL         "Trigger",IDC_TRIGGER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,320,80,39,10
+    CONTROL         "",IDC_FRAME,"Static",SS_BLACKFRAME | SS_NOTIFY,105,11,
+                    98,79
+    CONTROL         "",IDC_FRAME2,"Static",SS_BLACKFRAME | SS_NOTIFY,208,11,
+                    98,79
+    LTEXT           "Display",IDC_DISPTXT,135,0,24,8
+    LTEXT           "Reference",IDC_REFTXT,242,0,36,8
+    PUSHBUTTON      "X",IDC_CLOSE,368,2,11,8,NOT WS_TABSTOP
+    LTEXT           "Low-pass",IDC_STATIC,14,33,31,8
+    LTEXT           "High-pass",IDC_STATIC,14,48,32,8
+    GROUPBOX        "Filters (Hz) ",IDC_FILTERS,7,24,96,38,BS_NOTIFY,
+                    WS_EX_TRANSPARENT
+    LTEXT           "Scale",IDC_STATIC,16,66,18,8
+    CTEXT           "uV",IDC_SCALEUNIT,84,65,16,10,SS_SUNKEN
+    CONTROL         "",IDC_LOCK,"Button",BS_AUTOCHECKBOX | BS_BITMAP | 
+                    BS_PUSHLIKE | WS_TABSTOP,88,0,13,12
+    EDITTEXT        IDC_BPSCALE,336,64,35,13,ES_RIGHT | ES_AUTOHSCROLL
+    CONTROL         "",IDC_SBPSCALE,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNLEFT | UDS_AUTOBUDDY | UDS_ARROWKEYS,330,64,10,
+                    14
+    LTEXT           "Scale",IDC_BPSTATIC,307,67,18,8
+    LTEXT           "Record",IDC_STATIC,42,1,24,8
+    CTEXT           "uV",IDC_BPSCALEUNIT,371,66,16,10,SS_SUNKEN
+END
+
+IDD_INFOPANEL DIALOGEX 0, 0, 85, 94
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "Static",IDC_INFO,3,3,80,88,WS_BORDER
+END
+
+IDD_FINFOPANEL DIALOGEX 0, 0, 85, 176
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "Static",IDC_INFO,3,3,80,88,WS_BORDER
+    CONTROL         "",IDC_MAP,"Static",SS_BLACKFRAME | SS_NOTIFY,2,105,80,
+                    63
+END
+
+IDD_LISTPANEL DIALOGEX 0, 0, 85, 176
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+EXSTYLE WS_EX_NOPARENTNOTIFY
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_MAP,"Static",SS_BLACKFRAME | SS_NOTIFY,2,105,80,
+                    63
+    CONTROL         "",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,7,7,71,93
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_BIPOLDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_MAPDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 269
+        BOTTOMMARGIN, 143
+    END
+
+    IDD_HARDDLG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 77
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 278
+    END
+
+    IDD_DLGVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 387
+        BOTTOMMARGIN, 90
+    END
+
+    IDD_COLORSDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 245
+    END
+
+    IDD_VIEWSETDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_TRIGVIEWDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 245
+    END
+
+    IDD_PROGSET, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 196
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 245
+    END
+
+    IDD_ACQTRIGDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 213
+    END
+
+    IDD_OFFSETPAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 245
+    END
+
+    IDD_OSCDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 387
+        BOTTOMMARGIN, 90
+    END
+
+    IDD_SNAPDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 387
+        BOTTOMMARGIN, 90
+    END
+
+    IDD_INFOPANEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 78
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_FINFOPANEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 78
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_LISTPANEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 78
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DLGVIEW DLGINIT
+BEGIN
+    IDC_CMBFLP, 0x403, 5, 0
+0x4f4e, 0x454e, "\000" 
+    IDC_CMBFLP, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_CMBFLP, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_CMBFLP, 0x403, 3, 0
+0x3033, "\000" 
+    IDC_CMBFLP, 0x403, 3, 0
+0x3034, "\000" 
+    IDC_CMBFLP, 0x403, 3, 0
+0x3035, "\000" 
+    IDC_CMBFLP, 0x403, 4, 0
+0x3031, 0x0030, 
+    IDC_CMBFLP, 0x403, 4, 0
+0x3035, 0x0030, 
+    IDC_CMBFLP, 0x403, 5, 0
+0x3031, 0x3030, "\000" 
+    IDC_CMBFLP, 0x403, 6, 0
+0x3031, 0x3030, 0x0030, 
+    IDC_CMBFHP, 0x403, 5, 0
+0x4f4e, 0x454e, "\000" 
+    IDC_CMBFHP, 0x403, 4, 0
+0x2e30, 0x0031, 
+    IDC_CMBFHP, 0x403, 2, 0
+0x0031, 
+    IDC_CMBFHP, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_CMBFHP, 0x403, 4, 0
+0x3031, 0x0030, 
+    IDC_CMBFHP, 0x403, 5, 0
+0x3031, 0x3030, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_OSC                 ICON                    "res\\Osc.ico"
+IDI_SNAP                ICON                    "res\\Snap.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    ID_THREE                "Three\nPress here"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_ONE                  "one\nAFTER"
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_CLOSE
+    SEPARATOR
+    BUTTON      ID_RUN_WRDISABLE
+    BUTTON      ID_RUN_GO
+    BUTTON      ID_RUN_PAUSE
+    BUTTON      ID_RUN_WRMANUAL
+    SEPARATOR
+    BUTTON      ID_OSC_NEW
+    BUTTON      ID_SNAP_NEW
+    SEPARATOR
+    BUTTON      ID_EXPORT_MATLAB
+    SEPARATOR
+    BUTTON      ID_TOOLS_SETTINS
+    SEPARATOR
+    BUTTON      ID_HELP_ACTDHELP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOGBAR DIALOGEX 0, 0, 89, 111
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+EXSTYLE WS_EX_CLIENTEDGE
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_FRAME,"Static",SS_BLACKFRAME | SS_NOTIFY,7,7,75,
+                    97
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 203, 134
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,146,113,50,14
+    CTEXT           "ActiveD v0.10alpha Mk2\n060210\n(c) DIZ 2005-2006",
+                    IDC_TEXT,14,40,126,27
+    ICON            IDR_MAINFRAME,IDC_STATIC,66,15,20,20
+    GROUPBOX        "",IDC_STATIC,7,7,136,120
+    LTEXT           "a",IDC_TRIAL,145,17,56,8
+    CTEXT           "with use of Thread wrapper by Bjarke Viksoe (bjarke@viksoe.dk)\nand CDotNetTabCtrl by Daniel Bowen (dbowen@es.com)",
+                    IDC_TEXT2,13,87,126,33
+    CTEXT           "diz-vara@yandex.ru",IDC_LINK,39,71,72,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOGBAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 82
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ActD.ico"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""atlres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST ""res\\\\ActD.exe.manifest""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM "Close",                       ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "Open Configuration",          ID_FILE_OPENCONFIG
+        MENUITEM "Save Configuration As...",    ID_FILE_SAVECONFIG
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "Window"
+    BEGIN
+        MENUITEM "New Oscilloscope",            ID_OSC_NEW
+        MENUITEM "New Shapshot",                ID_SNAP_NEW
+        MENUITEM SEPARATOR
+        MENUITEM "Tile",                        ID_WINDOW_TILE
+        MENUITEM "Cascade",                     ID_WINDOW_CASCADE
+        MENUITEM "Dock and Cascade All",        ID_WINDOW_DOCKALL
+    END
+    POPUP "Run"
+    BEGIN
+        MENUITEM "Go",                          ID_RUN_GO
+        MENUITEM "Test",                        ID_RUN_TEST
+        MENUITEM "Pause",                       ID_RUN_PAUSE
+    END
+    POPUP "Tools"
+    BEGIN
+        MENUITEM "Settins",                     ID_TOOLS_SETTINS
+        MENUITEM "Load Electrode Names",        ID_TOOLS_LOADELECTRODENAMES
+        MENUITEM "MatlabExport",                ID_EXPORT_MATLAB
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "ActiveD Help",                ID_HELP_ACTDHELP
+        MENUITEM "&About ActiveD...",           ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_F1,          ID_HELP_ACTDHELP,       VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "test1 Module"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "TEST1"
+            VALUE "LegalCopyright", "Copyright 2004"
+            VALUE "OriginalFilename", "ActD.exe"
+            VALUE "ProductName", "ActD Module"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "ActiveD"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew File"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    ATL_IDS_SCSIZE          "Change the window size"
+    ATL_IDS_SCMOVE          "Change the window position"
+    ATL_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    ATL_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    ATL_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    ATL_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    ATL_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    ATL_IDS_SCRESTORE       "Restore the window to normal size"
+    ATL_IDS_SCTASKLIST      "Activate Task List"
+    ATL_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE 
+BEGIN
+    ATL_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ATL_IDS_MRU_FILE        "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TOOLS_SETTINS        "Evokes settings dialog\nSettings"
+    ID_OSC_NEW              "Opens new Osc Window\nNew Oscilloscope"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_RUN_PAUSE            "Pause\nPause recording"
+    ID_RUN_WRDISABLE        "Write disabe\ndisable writing to the file"
+    ID_RUN_WRMANUAL         "Manual Write\nRecord"
+    ID_SNAP_NEW             "Opents new SnapShot window\nNew SnapShot"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_POWER_PANE           " Power off/disconnected "
+    ID_BAT_PANE             " BAT "
+    ID_CMS_PANE             " CMS "
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EXPORT_MATLAB        "Matlab Export\nExport current file to the Matlab *.mat file"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_HDRDLG DIALOGEX 0, 0, 303, 135
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Patient and recording description"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_PATCODE,8,44,57,51,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_PATSEX,67,44,28,30,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_PBDAY,97,44,26,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "",IDC_SPBDAY,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNLEFT | UDS_AUTOBUDDY | UDS_ARROWKEYS,129,54,6,
+                    14
+    COMBOBOX        IDC_PBMONTH,125,44,30,30,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_PBYEAR,158,44,35,12,ES_RIGHT | ES_NUMBER
+    CONTROL         "",IDC_SPBYEAR,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNLEFT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,188,60,6,14
+    EDITTEXT        IDC_PATNAME,197,43,98,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_INVCODE,18,80,82,30,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_RESEARCHER,108,80,82,30,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_EQUIPMENT,197,79,82,30,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,246,114,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,190,114,50,14
+    LTEXT           "  Investigation code (type of experiment)",IDC_STATIC,
+                    18,63,71,16
+    LTEXT           "Patient code",IDC_STATIC,27,34,41,8
+    LTEXT           "Sex",IDC_STATIC,74,34,13,8
+    LTEXT           "Birthdate",IDC_STATIC,134,34,37,8
+    LTEXT           "Patient name",IDC_STATIC,213,34,43,8
+    LTEXT           "Responsible Investigator",IDC_STATIC,113,71,80,8
+    LTEXT           "Equipment code",IDC_STATIC,209,71,52,8
+    CTEXT           "Date and Time",IDC_DATETIME,92,14,110,12,0,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "As Previous",IDC_PREVIOUS,112,114,50,14
+    COMBOBOX        IDC_STIMCODE,18,107,82,30,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    CTEXT           " Stimuli code",IDC_STATIC,18,98,71,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_HDRDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 296
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 128
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST "res\\ActD.exe.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
